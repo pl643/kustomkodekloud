@@ -1,2 +1,2 @@
 # kustomkodekloud
-Scripts to configure a custom KK environment
+Scripts and files to configure a custom KK environment
