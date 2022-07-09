@@ -31,6 +31,9 @@ echo $password | sudo -S bash -c "echo $user ALL = NOPASSWD : ALL >> /etc/sudoer
 # ssh options to prevent prompting
 SSHOPT="-o userknownhostsfile=/dev/null -o StrictHostKeyChecking=no"
 
+# create and download ~/bin files
+[ -d ~/bin ] || mkdir ~/bin
+
 # jump(thor) system specific specific
 if [ "$hostname" = "jump_host" ]; then
     # install tmux, sshpass
