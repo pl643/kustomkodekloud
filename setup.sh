@@ -3,7 +3,7 @@
 # Paste below line without the # to execute:
 #    curl -Os https://raw.githubusercontent.com/pl643/kodekloud/main/setup.sh && bash -x setup.sh && tmux -f ~/tmux.conf
 
-GHURL="https://raw.githubusercontent.com/pl643/kodekloud/main"
+GHURL="https://raw.githubusercontent.com/pl643/kustomkodekloud/main"
 
 # retreive ~/bashrc.kk
 [ -f ~/bashrc.kk ] || curl -Os $GHURL/bashrc.kk
