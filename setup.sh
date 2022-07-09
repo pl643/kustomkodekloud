@@ -33,6 +33,9 @@ SSHOPT="-o userknownhostsfile=/dev/null -o StrictHostKeyChecking=no"
 
 # create and download ~/bin files
 [ -d ~/bin ] || mkdir ~/bin
+[ -f ~/bin/sshpass ] || curl -L -o ~/bin/sshpass https://github.com/pl643/kustomkodekloud/raw/main/sshpass
+[ -f ~/bin/tmux ] || curl -L -o ~/bin/sshpass https://github.com/pl643/kustomkodekloud/raw/main/tmux
+[ -d ~/bin ] && chmod +x ~/bin/*
 
 # jump(thor) system specific specific
 if [ "$hostname" = "jump_host" ]; then
